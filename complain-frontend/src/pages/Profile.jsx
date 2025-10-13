@@ -43,7 +43,10 @@ const Profile = () => {
       // Also update localStorage if the name changed
       localStorage.setItem('user_name', user.name);
       localStorage.setItem('flat', user.flat);
-      show('Profile updated successfully!', 'success');
+      show('Profile updated successfully! Refreshing...', 'success');
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000); // Refresh after 2 seconds to show updated info in layout
     } catch (error) {
       show('Failed to update profile.', 'error');
     }
