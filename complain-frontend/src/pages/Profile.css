@@ -1,0 +1,62 @@
+/* src/pages/Profile.css */
+.profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-form .form-group {
+    margin-bottom: 20px;
+}
+
+.profile-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.profile-form input:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.profile-form .submit-btn {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.profile-form .submit-btn:hover {
+    background-color: #333;
+}
+
+.profile-form .submit-btn:disabled {
+    background-color: #a9a9a9;
+    cursor: not-allowed;
+}

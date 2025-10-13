@@ -1,0 +1,156 @@
+/* Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  cursor: pointer;
+  color: #333;
+}
+
+.sidebar li.active {
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+/* User profile */
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.avatar {
+  background:#000;
+  color: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  margin: 0;
+}
+
+.flat {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.subtitle {
+  color: gray;
+  margin: 5px 0 20px 0;
+}
+
+/* Invite Button */
+.invite-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.invite-btn:hover {
+  background: #000;
+}
+
+/* Users Table */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.users-table th,
+.users-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.users-table th {
+  background: #f1f1f1;
+}
+
+/* Role Badge */
+.role-badge {
+  background: #000;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Action Button */
+.action-btn {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: #ddd;
+}
+
+/* Note */
+.note {
+  color: gray;
+  font-size: 14px;
+  margin-top: 15px;
+}

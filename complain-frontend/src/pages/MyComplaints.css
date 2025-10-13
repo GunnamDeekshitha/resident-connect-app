@@ -1,0 +1,141 @@
+.complaints-container {
+  padding: 20px;
+}
+
+.complaints-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.page-title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.filter-select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.complaints-list {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.complaint-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.complaint-item:last-child {
+  border-bottom: none;
+}
+
+.no-complaints {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Card styles */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.complaint-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.03);
+  align-items: flex-start;
+}
+
+.card-left {
+  flex: 1 1 auto;
+}
+
+.card-title {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+}
+
+.card-meta {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 8px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.meta-item { color: #6b7280; font-size: 13px; }
+.meta-sep { color: #e5e7eb; }
+
+.card-desc {
+  color: #374151;
+  margin: 8px 0 0 0;
+  font-size: 14px;
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 140px;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 12px;
+  color: white;
+}
+.badge.pending { background: #f59e0b; }
+.badge.inprogress { background: #3b82f6; }
+.badge.resolved { background: #10b981; }
+.badge.unknown { background: #6b7280; }
+
+.card-actions { display:flex; gap:8px; margin-top:6px; }
+.view-btn, .secondary-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.view-btn { background: #111827; color: #fff; }
+.secondary-btn { background: transparent; border: 1px solid #e5e7eb; }
+
+@media (min-width: 720px) {
+  .cards { grid-template-columns: 1fr 1fr; }
+}
