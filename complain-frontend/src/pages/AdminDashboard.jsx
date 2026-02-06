@@ -15,9 +15,7 @@ const AdminDashboard = () => {
         setLoading(true);
         const res = await services.listAllComplaints();
         if (!mounted) return;
-        // services returns { data: [...] } from axios
         setComplaints(res.data || []);
-        // fetch users count for the admin (number of users)
         try {
           const ures = await services.listUsers();
           if (mounted) setTotalUsers((ures.data || []).length);
